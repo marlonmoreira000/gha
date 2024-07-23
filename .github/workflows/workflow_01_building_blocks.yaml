@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo hello world
-      - run: echo "Hello World!"
+        run: echo "Hello World!"
   second_job:
     name: my second job
     runs-on: ubuntu-latest
     steps:
       - name: failed step
-      - run: |
+        run: |
           echo "I will fail"
           exit 1
       - name: say goodbye
