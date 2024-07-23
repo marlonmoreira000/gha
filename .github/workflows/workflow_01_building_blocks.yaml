@@ -1,0 +1,24 @@
+name: workflow_01_building_blocks
+run-name: ${{ github.actor }} is playing around with GitHub Actions
+
+on:
+  - workflow_dispatch
+
+jobs:
+  first_job:
+    name: my first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo hello world
+      - run: echo "Hello World!"
+  second_job:
+    name: my second job
+    runs-on: ubuntu-latest
+    steps:
+      - name: failed step
+      - run: |
+          echo "I will fail"
+          exit 1
+      - name: say goodbye
+        run: echo "goodbye!"
+      
