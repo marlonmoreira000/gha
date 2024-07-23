@@ -2,6 +2,7 @@ name: workflow_01_building_blocks
 run-name: ${{ github.actor }} is playing around with GitHub Actions
 
 on:
+  - push
   - workflow_dispatch
 
 jobs:
