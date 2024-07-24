@@ -7,5 +7,5 @@ jobs:
   echo:
     runs-on: ubuntu-latest 
     steps:
-      - name: show the event information
-        run: echo ${{ toJson(github.event) }}
+      - name: show the event name
+        run: echo ${{ github.event_name }}
