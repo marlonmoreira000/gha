@@ -3,6 +3,7 @@ name: workflow_02_event_triggers
 on:
   # we use object notation in case we need to specify other parameters
   workflow_dispatch:
+  pull_request:
 
 jobs:
   echo:
